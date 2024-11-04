@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        #sticky-note {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #e8e68b; /* Matcha-like color */
+            padding: 20px;
+            border: 2px solid #666; /* Darker border color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #resolution-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #resolution-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .resolution-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .checkbox {
+            margin-right: 10px;
+        }
+
+        #delete-selected-button {
+            font-family: 'Courier New', monospace; /* Change the font */
+            background-color: transparent;
+            color: #e74c3c; /* Red color */
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        /* Style to make the button visually clickable */
+        #delete-selected-button:hover {
+            color: #c0392b; /* Darker red on hover */
+        }
+
+        #resolution-input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        #delete-selected-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+    <div id="sticky-note">
+        <p id="resolution-text">Young Su & Sara Anime List</p>
+        <ul id="resolution-list"></ul>
+        <textarea id="resolution-input" placeholder="Add anime"></textarea>
+        <button id="delete-selected-button">Delete Selected</button>
+    </div>
+</body>
+
+</html>
